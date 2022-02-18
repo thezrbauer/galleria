@@ -17,3 +17,9 @@ body {
   font-size: 18px;
   font-family: "Rubik", sans-serif;
 }
+
+
+
+/* Masonry library practice */
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }

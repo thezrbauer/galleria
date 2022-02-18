@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "masonry-layout": "^4.2.2",
+    "package-json": "^7.0.0"
+  }
+}
