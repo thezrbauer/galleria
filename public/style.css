@@ -12,14 +12,103 @@
 }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
+ 
+  
   font-size: 18px;
   font-family: "Rubik", sans-serif;
 }
 
+.header {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
 
+.logo {
+  height:40px;
+  width:150px;
+}
+
+
+.str__slideshow {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:gray;
+  font-size:11px;
+  margin:1rem;
+  letter-spacing: 2px;
+}
+
+.dividing-bar {
+width:1200px;
+height:2px;
+background-color: rgba(185, 179, 179, 0.151);
+margin:0 auto;
+}
+
+.grid{
+  max-width: 1000px;
+  margin:0 auto;
+
+}
+
+.grid-sizer {
+  width:250px;
+}
 
 /* Masonry library practice */
-.grid-item { width: 200px; }
-.grid-item--width2 { width: 400px; }
+.grid-item { 
+  padding:.8rem;
+  width: 250px;
+ }
+
+ 
+.grid-item--height1 {height:180px;}
+.grid-item--height2 {height:300px;}
+.grid-item--height3 {height:210px;}
+.grid-item--height4 {height:200px;}
+.grid-item--height5 {height:325px;}
+.grid-item--height6 {height:250px;}
+.grid-item--height7 {height:375px;}
+.grid-item--height8 {height:220px;}
+
+
+ img {
+   width:100%;
+   height:100%;
+ }
+
+ @media only screen and (max-width: 768px) { 
+
+  .grid{
+    max-width: 750px;
+
+  
+  }
+
+  .grid-item { 
+    padding:.8rem;
+    width: 300px;
+   }
+
+  .grid-sizer { 
+    width:320px;
+   
+  }
+ }
+
+ @media only screen and (max-width: 480px) { 
+
+  .grid-sizer { 
+    width:360px;
+   
+  }
+  .grid-item--height1 {height:230px;}
+  .grid-item--height2 {height:330px;}
+  .grid-item--height3 {height:250px;}
+  .grid-item--height4 {height:200px;}
+  .grid-item--height5 {height:350px;}
+  .grid-item--height6 {height:300px;}
+  .grid-item--height7 {height:400px;}
+  .grid-item--height8 {height:250px;}
+
+ }
