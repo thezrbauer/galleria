@@ -57,10 +57,50 @@ margin:0 auto;
 
 /* Masonry library practice */
 .grid-item { 
+  position:relative;
+  text-align:left;
+  color:white;
   padding:.8rem;
   width: 250px;
+
  }
 
+ .img-txt{
+  position:absolute;
+
+  text-shadow: 1px 1px black;
+  bottom:15%;
+  left:15%;
+  line-height:1px;
+  width:80%;
+  height:auto;
+
+
+ }
+  .art-name {
+    font-size:22px;
+    line-height:24px
+ }
+  
+  .artist-name {
+   font-size:11px;
+   padding-left:2px;
+    margin-top:-16px;
+
+   
+ }
+
+
+
+ .slideshow__content {
+   display:grid;
+   grid-template-columns: repeat(2, 400px);
+   justify-content: center;
+   align-items:center;
+   margin: 0 auto;
+ }
+
+ 
  
 .grid-item--height1 {height:180px;}
 .grid-item--height2 {height:300px;}
@@ -94,6 +134,15 @@ margin:0 auto;
     width:320px;
    
   }
+  .grid-item--height1 {height:250px;}
+  .grid-item--height2 {height:330px;}
+  .grid-item--height3 {height:250px;}
+  .grid-item--height4 {height:200px;}
+  .grid-item--height5 {height:350px;}
+  .grid-item--height6 {height:300px;}
+  .grid-item--height7 {height:400px;}
+  .grid-item--height8 {height:250px;}
+
  }
 
  @media only screen and (max-width: 480px) { 
@@ -102,13 +151,13 @@ margin:0 auto;
     width:360px;
    
   }
-  .grid-item--height1 {height:230px;}
-  .grid-item--height2 {height:330px;}
-  .grid-item--height3 {height:250px;}
-  .grid-item--height4 {height:200px;}
-  .grid-item--height5 {height:350px;}
-  .grid-item--height6 {height:300px;}
-  .grid-item--height7 {height:400px;}
-  .grid-item--height8 {height:250px;}
+  .grid-item--height1 {height:270px;}
+  .grid-item--height2 {height:360px;}
+  .grid-item--height3 {height:270px;}
+  .grid-item--height4 {height:220px;}
+  .grid-item--height5 {height:370px;}
+  .grid-item--height6 {height:320px;}
+  .grid-item--height7 {height:420px;}
+  .grid-item--height8 {height:270px;}
 
  }
