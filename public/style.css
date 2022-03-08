@@ -91,16 +91,6 @@ margin:0 auto;
  }
 
 
-
- .slideshow__content {
-   display:grid;
-   grid-template-columns: repeat(2, 400px);
-   justify-content: center;
-   align-items:center;
-   margin: 0 auto;
- }
-
- 
  
 .grid-item--height1 {height:180px;}
 .grid-item--height2 {height:300px;}
@@ -161,3 +151,36 @@ margin:0 auto;
   .grid-item--height8 {height:270px;}
 
  }
+
+
+
+ /* Slideshow Style */
+
+ .slideshow__content {
+  display:grid;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: center;
+  align-items:center;
+  margin: 0 auto;
+}
+
+.content__left {
+ background-color: aqua;
+}
+
+.artist-display {
+  background-color:Red;
+}
+
+
+.title-card {
+  float:top;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  width:300px;
+  height:150px;
+  line-height:1px;
+}
