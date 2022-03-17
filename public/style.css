@@ -40,20 +40,20 @@ body {
 }
 
 .dividing-bar {
-width:1200px;
+width:80%;
 height:2px;
 background-color: rgba(185, 179, 179, 0.151);
 margin:0 auto;
 }
 
 .grid{
-  max-width: 1000px;
-  margin:0 auto;
+  max-width: 1200px;
+  margin:1rem auto;
 
 }
 
 .grid-sizer {
-  width:250px;
+  width:300px;
 }
 
 /* Masonry library practice */
@@ -62,7 +62,7 @@ margin:0 auto;
   text-align:left;
   color:white;
   padding:.8rem;
-  width: 250px;
+  width: 300px;
 
  }
 
@@ -79,28 +79,28 @@ margin:0 auto;
 
  }
   .art-name {
+ 
     font-size:22px;
     line-height:24px
  }
   
   .artist-name {
+    font-style: inherit;
    font-size:11px;
    padding-left:2px;
     margin-top:-16px;
-
-   
  }
 
 
  
-.grid-item--height1 {height:180px;}
+.grid-item--height1 {height:220px;}
 .grid-item--height2 {height:300px;}
-.grid-item--height3 {height:210px;}
+.grid-item--height3 {height:240px;}
 .grid-item--height4 {height:200px;}
-.grid-item--height5 {height:325px;}
-.grid-item--height6 {height:250px;}
-.grid-item--height7 {height:375px;}
-.grid-item--height8 {height:220px;}
+.grid-item--height5 {height:360px;}
+.grid-item--height6 {height:270px;}
+.grid-item--height7 {height:410px;}
+.grid-item--height8 {height:250px;}
 
 
  img {
@@ -108,50 +108,8 @@ margin:0 auto;
    height:100%;
  }
 
- @media only screen and (max-width: 768px) { 
 
-  .grid{
-    max-width: 750px;
 
-  
-  }
-
-  .grid-item { 
-    padding:.8rem;
-    width: 300px;
-   }
-
-  .grid-sizer { 
-    width:320px;
-   
-  }
-  .grid-item--height1 {height:250px;}
-  .grid-item--height2 {height:330px;}
-  .grid-item--height3 {height:250px;}
-  .grid-item--height4 {height:200px;}
-  .grid-item--height5 {height:350px;}
-  .grid-item--height6 {height:300px;}
-  .grid-item--height7 {height:400px;}
-  .grid-item--height8 {height:250px;}
-
- }
-
- @media only screen and (max-width: 480px) { 
-
-  .grid-sizer { 
-    width:360px;
-   
-  }
-  .grid-item--height1 {height:270px;}
-  .grid-item--height2 {height:360px;}
-  .grid-item--height3 {height:270px;}
-  .grid-item--height4 {height:220px;}
-  .grid-item--height5 {height:370px;}
-  .grid-item--height6 {height:320px;}
-  .grid-item--height7 {height:420px;}
-  .grid-item--height8 {height:270px;}
-
- }
 
 
 
@@ -167,7 +125,7 @@ margin:0 auto;
 
 /* left-side content */
 .content__left {
- background-color: aqua;
+
  height:100%;
  width:100%;
  position: relative;
@@ -201,7 +159,7 @@ margin:0 auto;
 }
 
 .title-card {
-  float:top;
+  
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -225,9 +183,9 @@ margin:0 auto;
 
 .content__right {
   position:relative;
-
  height:100%;
  width:100%;
+
 }
 .year{
   font-size:16rem;
@@ -248,4 +206,146 @@ margin:0 auto;
   line-height: 28px;
   font-size:18px;
  }
+
+
+
+
+ @media only screen and (max-width: 1200px) { 
+  .slideshow__content {
+    grid-template-columns:  650px;
+    gap: 2rem;
+    grid-template-rows: repeat(2,500px);
+  
+  }
+
+  .hero {
+    position:absolute;
+    right:0;
+    top:30%;
+  }
+
+  .artist-bio {
+    margin:6rem 0rem 0rem 8rem;
+  }
+  .lightbox-button { 
+    bottom:4%;
+    left:4%;
+  }
+
+  .year{ 
+    margin-top:-3.5rem;
+    left:0;
+  }
+}
+
+
+ @media only screen and (max-width: 810px) { 
+
+  .grid{
+    max-width: 80%;
+  }
+
+ 
+
+  .grid-sizer { 
+    width:300px;
+   
+  }
+  .grid-item--height1 {height:250px;}
+  .grid-item--height2 {height:330px;}
+  .grid-item--height3 {height:250px;}
+  .grid-item--height4 {height:200px;}
+  .grid-item--height5 {height:350px;}
+  .grid-item--height6 {height:300px;}
+  .grid-item--height7 {height:400px;}
+  .grid-item--height8 {height:250px;}
+ }
+
+
+ @media only screen and (max-width: 600px) { 
+  /* Slideshow Mobile reorganize CSS FILE */
+    .slideshow__content {
+      grid-template-columns:  400px;
+  
+      grid-template-rows: repeat(2,500px);
+    
+    }
+  
+    .artist-display {
+      height:20px;
+     }
+  
+  
+  
+    .img-1 {
+      width:88%;
+      height:32vh;
+    }
+  
+    .hero {
+      left:0;
+      top:22rem;
+      margin-top:auto;
+    }
+  
+    .artist-bio {
+      margin:auto 2rem;
+    }
+
+    .lightbox-button { 
+      bottom:80%;    
+      left:4%;
+    }
+  
+    .year{ 
+      font-size:8rem;
+      right:0;
+      left:auto;
+      margin-top:-7rem;
+    }
+  
+    .title-card {  
+    bottom:25%;
+    left:0%;
+    }
+  
+    /* Mobile Galleria  */
+
+    .grid-item { 
+      width: 400px;
+     }
+  
+  
+    .grid-sizer { 
+      width:100%;
+     
+    }
+    .grid-item--height1 {height:300px;}
+    .grid-item--height2 {height:400px;}
+    .grid-item--height3 {height:300px;}
+    .grid-item--height4 {height:250px;}
+    .grid-item--height5 {height:400px;}
+    .grid-item--height6 {height:350px;}
+    .grid-item--height7 {height:450px;}
+    .grid-item--height8 {height:300px;}
+  
+    .img-txt{
+      left:8%;
+      bottom:8%;
+    }
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
 
