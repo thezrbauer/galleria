@@ -12,8 +12,6 @@
 }
 
 body {
- 
-  
   font-size: 18px;
   font-family: 'Kumbh Sans', sans-serif;;
 }
@@ -23,6 +21,10 @@ body {
   margin:2.5rem auto;
   display: flex;
   justify-content: space-around;
+}
+
+a {
+text-decoration: none;
 }
 
 .logo {
@@ -37,6 +39,11 @@ body {
   font-size:11px;
   margin:1rem;
   letter-spacing: 2px;
+}
+
+.str__slideshow > a {
+  font-size: 16px;
+  color:black;
 }
 
 .dividing-bar {
@@ -56,7 +63,7 @@ margin:0 auto;
   width:300px;
 }
 
-/* Masonry library practice */
+/* Masonry library style */
 .grid-item { 
   position:relative;
   text-align:left;
@@ -91,8 +98,6 @@ margin:0 auto;
     margin-top:-16px;
  }
 
-
- 
 .grid-item--height1 {height:220px;}
 .grid-item--height2 {height:300px;}
 .grid-item--height3 {height:240px;}
@@ -108,13 +113,8 @@ margin:0 auto;
    height:100%;
  }
 
-
-
-
-
-
+ 
  /* Slideshow Style */
-
  .slideshow__content {
   display:grid;
   grid-template-columns: repeat(2, 600px);
@@ -122,6 +122,7 @@ margin:0 auto;
   align-items:center;
   margin: 0 auto;
 }
+
 
 /* left-side content */
 .content__left {
@@ -178,7 +179,6 @@ margin:0 auto;
   top:25.5rem;
 }
 
-
 /* right-side content */
 
 .content__right {
@@ -206,9 +206,6 @@ margin:0 auto;
   line-height: 28px;
   font-size:18px;
  }
-
-
-
 
  @media only screen and (max-width: 1200px) { 
   .slideshow__content {
@@ -238,18 +235,14 @@ margin:0 auto;
   }
 }
 
-
  @media only screen and (max-width: 810px) { 
 
   .grid{
     max-width: 80%;
   }
 
- 
-
   .grid-sizer { 
     width:300px;
-   
   }
   .grid-item--height1 {height:250px;}
   .grid-item--height2 {height:330px;}
@@ -266,17 +259,14 @@ margin:0 auto;
   /* Slideshow Mobile reorganize CSS FILE */
     .slideshow__content {
       grid-template-columns:  400px;
-  
       grid-template-rows: repeat(2,500px);
     
     }
   
     .artist-display {
       height:20px;
-     }
-  
-  
-  
+    }
+
     .img-1 {
       width:88%;
       height:32vh;
@@ -333,8 +323,6 @@ margin:0 auto;
       left:8%;
       bottom:8%;
     }
-
-
    }
 
 
